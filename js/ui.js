@@ -18,6 +18,17 @@ const ui = {
         } catch {
             alert('Erro ao renderizar pensamentos')
         }
+    },
+    adicionarPensamentoNaLista(pensamento) {
+        const listaPensamentos = document.getElementById("lista-pensamentos")
+        const li = document.createElement("li")
+        li.setAttribute("data-id", pensamento.id)
+        li.classList.add("li-pensamento")
+
+        const iconeAspas = document.createElement('img')
+        iconeAspas.src = "assets/imagens/aspas-azuis.png"
+        iconeAspas.alt = "Aspas azuis"
+        iconeAspas.classList.add("icone-aspas")
     }
 }
 
