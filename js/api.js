@@ -19,7 +19,7 @@ const api = {
             })
             return await response.json()
         } catch {
-            alert('Erro ao salvar pensamentos')
+            alert('Erro ao salvar pensamento')
             throw error
         }
     }
