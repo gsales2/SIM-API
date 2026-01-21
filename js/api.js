@@ -1,10 +1,11 @@
 const api = {
-    async buscarPensamento() {
+    async buscarPensamentos() {
         try {
-            const response = await fetch('http://localhost:3000/pensamentos')
-            return response.json()
-        } catch () {
+            const response = await fetch('http://127.0.0.1:5500')
+            return await response.json()
+        } catch {
             alert('Erro ao buscar pensamentos')
+            throw error
         }
     }
 }
